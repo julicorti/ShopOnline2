@@ -25,8 +25,9 @@ public class Ejecutable {
         Cliente c1 = crearC();//crea cliente 
 
         Venta v = new Venta(c1);//se crea una venta y se le pasa el cliente creado
-
+//Nombre pertienete para la variable: seguirComprando
         boolean seguirAgregando = true;
+        
         v.agregarProductos(menu(productos));
         while (seguirAgregando) {//while de si quiere seguir agregando productos
             System.out.println("Desea agregar mas productos?\n[1]Si\n[2]No");
