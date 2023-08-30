@@ -38,12 +38,12 @@ public class Accesorio extends Producto implements Metal{
         }
 
         double precioF = precio * peso;
-        
+        // deberían invocar solo una vez a los dos métodos
         calcularImpuestoTransporte();
         
         calcularImpuestoAduanero();
         
-        
+        // pasar como parámetro el precioF
         return precioF + calcularImpuestoTransporte() + calcularImpuestoAduanero();
     }
     
